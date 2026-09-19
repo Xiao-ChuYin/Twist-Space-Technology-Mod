@@ -113,11 +113,11 @@ public class GT_TileEntity_IntensifyChemicalDistorter
         return StatCollector.translateToLocal("IntensifyChemicalDistorter.mode." + machineMode);
     }
     
-     @Override
-     public RecipeMap<?> getRecipeMap() {
+    @Override
+    public RecipeMap<?> getRecipeMap() {
         if (machineMode == 0) return GTCMRecipe.IntensifyChemicalDistorterRecipes;
         return RecipeMaps.multiblockChemicalReactorRecipes;
-     }
+    }
 
     @NotNull
     @Override
